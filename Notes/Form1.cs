@@ -39,6 +39,9 @@ namespace Notes
             table.Columns.Add("Title", typeof(String));
             table.Columns.Add("Message", typeof(String));
             dataGridView1.DataSource = table;
+
+            dataGridView1.Columns["Message"].Visible = false;
+            dataGridView1.Columns["Title"].Width = 175;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
